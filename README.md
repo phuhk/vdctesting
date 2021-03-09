@@ -8,18 +8,18 @@ This assignment from VDC
 - Separate raw `Model` from API response with `Model` using in `View`
 - Defined `Contract` for both Input/Output for each `Scene`
 - Using `Cocoapods` as Packet Manager
-![Architecture]()
+![Architecture]((https://github.com/phuhk/vcdtesting/blob/master/Architecture.png?raw=true)
 
-#$ Project Structure
+## Project Structure
 1. Target OpenWeatherClient
-`Application`: contain `Appdelegate` and `SceneDelegate`
-`Configurations`: contain `XCodeConfig` and `Info.plist`
-`Factory`: `Dependencies` proxy using in app
-`Component`: contain `Coordinator`, `Manager`, `Services` and `Constants` using in app
-`Models`: Raw model from API response
-`Scenes`: Scenes using in app
-`Extensions`: category
-`Resources`: resources using in app
+- `Application`: contain `Appdelegate` and `SceneDelegate`
+- `Configurations`: contain `XCodeConfig` and `Info.plist`
+- `Factory`: `Dependencies` proxy using in app
+- `Component`: contain `Coordinator`, `Manager`, `Services` and `Constants` using in app
+- `Models`: Raw model from API response
+- `Scenes`: Scenes using in app
+- `Extensions`: category
+- `Resources`: resources using in app
 
 2. OpenWeatherClientTests
 `Configurations`: testing `Configurations`
