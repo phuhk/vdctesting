@@ -1,0 +1,6 @@
+framework module Pods_OpenWeatherClientTests {
+  umbrella header "Pods-OpenWeatherClientTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
