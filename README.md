@@ -8,7 +8,7 @@ This assignment from VDC
 - Separate raw `Model` from API response with `Model` using in `View`
 - Defined `Contract` for both Input/Output for each `Scene`
 - Using `Cocoapods` as Packet Manager
-![Architecture](https://ibb.co/5rqc0TV)
+- ![Architecture](https://pasteboard.co/JRR8Jga.png)
 
 ## Project Structure
 1. Target OpenWeatherClient
