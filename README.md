@@ -22,9 +22,9 @@ This assignment from VDC
 - `Resources`: resources using in app
 
 2. OpenWeatherClientTests
-`Configurations`: testing `Configurations`
-`Factory`: contain Mock and testing `Dependencies`
-`Scene`: contain testing all `Base` file and `WeatherForecastViewModel`
+- `Configurations`: testing `Configurations`
+- `Factory`: contain Mock and testing `Dependencies`
+- `Scene`: contain testing all `Base` file and `WeatherForecastViewModel`
 
 ## Libraries
 - `RxSwift`/`RxCocoa`: Reactive Programming in Swift
