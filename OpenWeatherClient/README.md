@@ -48,10 +48,10 @@
 2. [x] Design app's architecture: MVVM
 3. [x] UI should be looks like in attachment.
 4. [x] Write UnitTests
-5. [] Acceptance Tests
+5. [ ] Acceptance Tests
 6. [x] Exception handling
-7. [] Caching handling
-8. [] Accessibility for Disability Supports:
-9. [] Entity relationship diagram for the database and solution diagrams for the components, infrastructure design if any
+7. [ ] Caching handling
+8. [ ] Accessibility for Disability Supports:
+9. [ ] Entity relationship diagram for the database and solution diagrams for the components, infrastructure design if any
 10. [x] Readme file includes
  
