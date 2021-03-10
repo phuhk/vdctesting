@@ -59,7 +59,6 @@ final class WeatherForecastViewModel: BaseViewModel<WeatherForecastViewModelCont
             .debounce(RxTimeInterval.milliseconds(Constants.timeoutMilliseconds),
                       scheduler: MainScheduler.instance)
             .filter({ !$0.isEmpty })
-            .distinctUntilChanged()
             .subscribe(onNext: { [weak self] city in
                 self?.getDailyForecast.execute(city)
             })
@@ -84,10 +83,16 @@ final class WeatherForecastViewModel: BaseViewModel<WeatherForecastViewModelCont
         
         getDailyForecast
             .errors
-            .map({ error -> Bool in
-                guard case .underlyingError(let error) = error else { return false }
-                return error as? ApiError == .network
+            .map({ error -> ApiError in
+                guard case .underlyingError(let error) = error,
+                      let apiError = error as? ApiError else { return ApiError.unknown }
+                return apiError
             })
+            .do(onNext: { [weak self] in
+                guard $0 == ApiError.unsuccessful else { return }
+                self?.weatherList.accept([])
+            })
+            .map({ $0 == ApiError.network })
             .bind(to: showErrorPopupTrigger)
             .disposed(by: rx.disposeBag)
         

@@ -56,6 +56,7 @@ protocol APIProvider {
 }
 
 enum ApiError: Error {
+    case unknown
     case network
     case unsuccessful
     case decodeIssue
