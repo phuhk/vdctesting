@@ -46,8 +46,8 @@ This assignment from VDC
 4. Launch `OpenWeatherClient.xcworkspace` and press `Run` button.
 
 ## Checklist
-1. [x] Programming language: Swift is required, Objective-C is optional.
-2. [x] Design app's architecture (recommend VIPER or MVP, MVVM but not mandatory)
+1. [x] Programming language: Swift
+2. [x] Design app's architecture: MVVM
 3. [x] UI should be looks like in attachment.
 4. [x] Write UnitTests
 5. Acceptance Tests
